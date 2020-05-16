@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcom To Restaurant"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+android:background="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center"
+        android:textSize="25dp"
+
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/txtCartItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:background="@color/colorAccent"
+
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
+
+    <TextView
+        android:id="@+id/CartItemsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:textSize="20dp"
+        android:background="@color/colorAccent"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+
+        app:layout_constraintLeft_toRightOf="@id/txtCartItem"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
+
+
+
+
+
+    <ListView
+        android:id = "@+id/Prodlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="13dp"
+
+        ></ListView>
+    <Button
+        android:id="@+id/btnSeeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text=" Check order"
+        android:textSize="20dp"
+        ></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

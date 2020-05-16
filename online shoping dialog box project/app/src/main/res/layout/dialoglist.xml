@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/dImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/car"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/dName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+android:text="name"
+        app:layout_constraintLeft_toRightOf="@+id/dImage"
+android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/dDes"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dName"
+        android:text="des"
+        app:layout_constraintLeft_toRightOf="@+id/dImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:textSize="14dp"
+        ></TextView>
+    <TextView
+        android:id="@+id/dtextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dImage"
+app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="160dp"
+        android:text="Price"
+        android:textSize="20dp"
+        ></TextView>
+    <TextView
+        android:id="@+id/dTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dImage"
+        app:layout_constraintLeft_toRightOf="@+id/dtextPrice"
+        android:layout_marginLeft="10dp"
+        android:text="0"
+        android:textSize="20dp"
+        ></TextView>
+<Button
+    android:id="@+id/btnDec"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="-"
+    android:textSize="25dp"
+    app:layout_constraintTop_toBottomOf="@+id/dTotalPrice"
+app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginLeft="40dp"></Button>
+
+    <TextView
+        android:id="@+id/dquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dTotalPrice"
+        app:layout_constraintLeft_toRightOf="@+id/btnDec"
+        android:layout_marginLeft="60dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+android:text="0"
+        ></TextView>
+    <Button
+        android:id="@+id/btnInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/dTotalPrice"
+app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        ></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
